@@ -1,0 +1,218 @@
+digraph B {
+    graph [splines=true,nodesep=0.4];
+    node [shape=plaintext];
+
+    {rank="min"; rankdir=LR; "Michillimackinac";}
+    {rank="same"; rankdir=LR; "Detroit"; "Fort Niagara"; "Fort Frontenac"; "Montreal"->"Quebec" [style=invis];}
+    {rank="same"; rankdir=LR; "Fort Presqu'Île"->"Fort St. John" [style=invis]; "Trois Rivieres"->"Tadoussac" [style=invis];}
+    {rank="same"; rankdir=LR; "Fort Venango"; "Oswego"; "Ticonderoga";}
+    {rank="same"; rankdir=LR; "Fort Duquesne"; "Fort Stanwix"; "Fort Wm. Henry"; "Kennebec"; "Gaspe";}
+    {rank="same"; rankdir=LR; "Richmond"; "Cumberland"; "Albany"; "Deerfield"; "Fort Halifax"->"Dummy"->"Fort Beausejour" [style=invis]; }
+    {rank="same"; rankdir=LR; "Norfolk"; "St. Mary's"; "New Haven"; "Pemaquid"; "Port Royal"; "Louisbourg";}
+    {rank="max"; rankdir=LR; "Baltimore"; "Philadelphia"; "New York"; "Boston"; "Halifax"; "Canso";}
+
+    "Dummy" [style=invis]
+    "Boston" [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" COLOR="red">
+                     <TR><TD colspan="2">Boston</TD><TD>2</TD></TR>
+                     <TR><TD>+1</TD><TD colspan="2">S X T 3</TD></TR>
+                    </TABLE>>]
+    "New Haven" [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" COLOR="red">
+                     <TR><TD>New Haven</TD><TD>2</TD></TR>
+                     <TR><TD colspan="2">S 2</TD></TR>
+                    </TABLE>>]
+    "New York" [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" COLOR="red">
+                     <TR><TD colspan="2">New York</TD><TD>2</TD></TR>
+                     <TR><TD>+1</TD><TD colspan="2">S X T 3</TD></TR>
+                    </TABLE>>]
+    "Norfolk" [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" COLOR="red">
+                     <TR><TD>Norfolk</TD><TD>2</TD></TR>
+                     <TR><TD colspan="2">S 2</TD></TR>
+                    </TABLE>>]
+    "Pemaquid" [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" COLOR="red">
+                     <TR><TD>Pemaquid</TD><TD>2</TD></TR>
+                     <TR><TD colspan="2">F</TD></TR>
+                    </TABLE>>]
+    "Philadelphia" [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" COLOR="red">
+                     <TR><TD>Philadelphia</TD><TD>2</TD></TR>
+                     <TR><TD colspan="2">W T 3</TD></TR>
+                    </TABLE>>]
+    "St. Mary's" [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" COLOR="red">
+                     <TR><TD>St. Mary's</TD><TD>1</TD></TR>
+                     <TR><TD colspan="2">B T</TD></TR>
+                    </TABLE>>]
+    "Deerfield" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Deerfield</TD><TD>4</TD></TR>
+                     <TR><TD colspan="2">2</TD></TR>
+                    </TABLE>>]
+    "Fort Duquesne" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Fort Duquesne</TD><TD>4</TD></TR>
+                     <TR><TD colspan="2">B F</TD></TR>
+                    </TABLE>>]
+    "Halifax" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Halifax</TD><TD>2</TD></TR>
+                     <TR><TD colspan="2">S F</TD></TR>
+                    </TABLE>>]
+    "Fort Halifax" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Fort Halifax</TD></TR>
+                    </TABLE>>]
+    "Albany" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Albany</TD><TD>4</TD></TR>
+                     <TR><TD colspan="2">B F</TD></TR>
+                    </TABLE>>]
+    "Baltimore" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Baltimore</TD><TD>2</TD></TR>
+                     <TR><TD colspan="2">3</TD></TR>
+                    </TABLE>>]
+    "Louisbourg" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD colspan="2">Louisbourg</TD><TD>4</TD></TR>
+                     <TR><TD>+1</TD><TD colspan="2"></TD></TR>
+                    </TABLE>>]
+    "Port Royal" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Port Royal</TD><TD>3</TD></TR>
+                     <TR><TD colspan="2">S</TD></TR>
+                    </TABLE>>]
+    "Oswego" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Oswego</TD><TD>2</TD></TR>
+                     <TR><TD colspan="2">B F</TD></TR>
+                    </TABLE>>]
+    "Gaspe" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Gaspe</TD><TD>1</TD></TR>
+                    </TABLE>>]
+    "Fort Wm. Henry" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Fort Wm. Henry</TD></TR>
+                     <TR><TD>B</TD></TR>
+                    </TABLE>>]
+    "Fort Venango" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Fort Venango</TD></TR>
+                     <TR><TD>F</TD></TR>
+                    </TABLE>>]
+    "Fort Stanwix" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Fort Stanwix</TD></TR>
+                     <TR><TD>B</TD></TR>
+                    </TABLE>>]
+    "Fort St. John" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Fort St. John</TD></TR>
+                     <TR><TD>F</TD></TR>
+                    </TABLE>>]
+    "Fort Presqu'Île" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Fort Presqu'Île</TD><TD>1</TD></TR>
+                     <TR><TD colspan="2">F</TD></TR>
+                    </TABLE>>]
+    "Fort Niagara" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Fort Niagara</TD><TD>2</TD></TR>
+                     <TR><TD colspan="2">F</TD></TR>
+                    </TABLE>>]
+    "Fort Frontenac" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Fort Frontenac</TD><TD>2</TD></TR>
+                     <TR><TD colspan="2">F</TD></TR>
+                    </TABLE>>]
+    "Fort Beausejour" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Fort Beausejour</TD></TR>
+                    </TABLE>>]
+    "Detroit" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Detroit</TD><TD>4</TD></TR>
+                     <TR><TD colspan="2">F</TD></TR>
+                    </TABLE>>]
+    "Michillimackinac" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Michillimackinac</TD><TD>2</TD></TR>
+                    </TABLE>>]
+    "Cumberland" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Cumberland</TD><TD>1</TD></TR>
+                    </TABLE>>]
+    "Canso" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Canso</TD><TD>2</TD></TR>
+                     <TR><TD colspan="2">F</TD></TR>
+                    </TABLE>>]
+    "Richmond" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Richmond</TD></TR>
+                     <TR><TD>2</TD></TR>
+                    </TABLE>>]
+    "Trois Rivieres" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Trois Rivieres</TD><TD>3</TD></TR>
+                     <TR><TD colspan="2">F</TD></TR>
+                    </TABLE>>]
+    "Ticonderoga" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Ticonderoga</TD></TR>
+                     <TR><TD>F</TD></TR>
+                    </TABLE>>]
+    "Tadoussac" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Tadoussac</TD><TD>2</TD></TR>
+                    </TABLE>>]
+    "Montreal" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD colspan="2">Montreal</TD><TD>4</TD></TR>
+                     <TR><TD>+1</TD><TD colspan="2"></TD></TR>
+                    </TABLE>>]
+    "Quebec" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD colspan="2">Quebec</TD><TD>6</TD></TR>
+                     <TR><TD>+2</TD><TD colspan="2"></TD></TR>
+                    </TABLE>>]
+    "Kennebec" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="black">
+                     <TR><TD>Kennebec</TD></TR>
+                    </TABLE>>]
+
+    "Fort Wm. Henry" -> "Albany" [color="blue",dir="both"];
+    "Deerfield" -> "New Haven" [color="blue",dir="both"];
+    "Fort Venango" -> "Fort Duquesne" [color="blue",dir="both"];
+    "Ticonderoga" -> "Fort Wm. Henry" [color="blue",dir="both"];
+    "Pemaquid" -> "Boston" [color="seagreen",style="dashed",dir="both"];
+    "Louisbourg" -> "Halifax" [color="seagreen",style="dashed",dir="both"];
+    "Fort Frontenac" -> "Oswego" [color="blue",dir="both"];
+    "Oswego" -> "Fort Stanwix" [color="blue",dir="both"];
+    "Port Royal" -> "Canso" [color="seagreen",style="dashed",dir="both"];
+    "Baltimore" -> "Philadelphia" [color="seagreen",style="dashed",dir="both"];
+    "Halifax" -> "Canso" [color="seagreen",style="dashed",dir="both"];
+    "Fort Beausejour" -> "Port Royal" [color="seagreen",style="dashed",dir="both"];
+    "New York" -> "Boston" [color="seagreen",style="dashed",dir="both"];
+    "Fort Duquesne" -> "Cumberland" [color="tan",dir="both"];
+    "Fort Niagara" -> "Fort Presqu'Île" [color="blue",dir="both"];
+    "Boston" -> "Halifax" [color="seagreen",style="dashed"];
+    "New Haven" -> "Pemaquid" [color="seagreen",style="dashed",dir="both"];
+    "Louisbourg" -> "Fort Beausejour" [color="seagreen",style="dashed"];
+    "Fort Beausejour" -> "Halifax" [color="seagreen",style="dashed",dir="both"];
+    "Fort Niagara" -> "Oswego" [color="blue",dir="both"];
+    "Fort Niagara" -> "Fort Frontenac" [color="blue",dir="both"];
+    "Tadoussac" -> "Quebec" [color="blue"];
+    "New Haven" -> "Boston" [color="seagreen",style="dashed",dir="both"];
+    "New Haven" -> "New York" [color="seagreen",style="dashed",dir="both"];
+    "Pemaquid" -> "Port Royal" [color="seagreen",style="dashed",dir="both"];
+    "Pemaquid" -> "Halifax" [color="seagreen",style="dashed",dir="both"];
+    "Albany" -> "New York" [color="blue",dir="both"];
+    "Richmond" -> "Norfolk" [color="blue",dir="both"];
+    "Trois Rivieres" -> "Quebec" [color="blue"];
+    "Detroit" -> "Fort Presqu'Île" [color="blue",dir="both"];
+    "Fort St. John" -> "Quebec" [color="blue"];
+    "Port Royal" -> "Louisbourg" [color="seagreen",style="dashed",dir="both"];
+
+    /* "Detroit" -> "Michillimackinac" [color="blue"]; changed to: */
+    "Michillimackinac" -> "Detroit" [color="blue",dir="back"];
+
+    "Tadoussac" -> "Louisbourg" [color="seagreen",style="dashed",dir="both"];
+    "Fort St. John" -> "Montreal" [color="blue"];
+    "Fort Halifax" -> "Pemaquid" [color="blue",dir="both"];
+    "Fort Niagara" -> "Detroit" [color="blue",/*added*/constraint=false];
+    "Port Royal" -> "Halifax" [color="seagreen",style="dashed",dir="both"];
+    "St. Mary's" -> "Philadelphia" [color="seagreen",style="dashed",dir="both"];
+    "Gaspe" -> "Fort Beausejour" [color="seagreen",style="dashed",dir="both"];
+    "Fort Stanwix" -> "Albany" [color="blue",dir="both"];
+    "Louisbourg" -> "Quebec" [color="seagreen",style="dashed"];
+    "Trois Rivieres" -> "Fort St. John" [color="blue",/*added*/constraint=false];
+    "Louisbourg" -> "Canso" [color="seagreen",style="dashed",dir="both"];
+    "Norfolk" -> "St. Mary's" [color="seagreen",style="dashed",dir="both"];
+    "Richmond" -> "St. Mary's" [color="blue",dir="both"];
+    "Gaspe" -> "Louisbourg" [color="seagreen",style="dashed",dir="both"];
+    "Fort Presqu'Île" -> "Fort Venango" [color="blue",dir="both"];
+    "Philadelphia" -> "New Haven" [color="seagreen",style="dashed"];
+    "Fort St. John" -> "Ticonderoga" [color="blue",dir="both"];
+    "Cumberland" -> "St. Mary's" [color="blue",dir="both"];
+    "Tadoussac" -> "Gaspe" [color="seagreen",style="dashed",dir="both"];
+    "Norfolk" -> "Baltimore" [color="seagreen",style="dashed",dir="both"];
+    "St. Mary's" -> "Baltimore" [color="blue",dir="both"];
+    "Fort Beausejour" -> "Canso" [color="seagreen",style="dashed"];
+    "Trois Rivieres" -> "Montreal" [color="blue"];
+    "Philadelphia" -> "New York" [color="seagreen",style="dashed",dir="both"];
+    "Fort Beausejour" -> "Pemaquid" [color="seagreen",style="dashed",dir="both"];
+    "Fort Halifax" -> "Kennebec" [color="tan"];
+    "Fort Frontenac" -> "Montreal" [color="blue"];
+    "Boston" -> "Port Royal" [color="seagreen",style="dashed"];
+    "Louisbourg" -> "Trois Rivieres" [color="seagreen",style="dashed"];
+}
